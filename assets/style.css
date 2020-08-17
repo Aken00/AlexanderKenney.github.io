@@ -8,7 +8,6 @@
 
   body {
     margin: 0;
-    color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
   
@@ -27,13 +26,6 @@
     color: darkturquoise;
   }
 
-  header h2 {
-    font-weight: bold;
-    margin: 0;
-    font-size: 24px;
-    color: darkcyan;
-    background-image: url('./images/Head-Shot-Suit.jpg');
-  }
   header a {
     text-decoration: underline;
     color: darkturquoise;
@@ -60,18 +52,6 @@
     font-size: 1.55vw;
   }
 
-  section img {
-    position: absolute;
-    top: 60px;
-    left: 10px;
-    height: 250px;
-    width: 200px;
-    border-radius: 10px;
-  }
-
-  section {
-    padding: 20px;
-  }
 
   .reel {
     background-image: url('./images/Film-Reel-Blue.jpg');
@@ -84,25 +64,44 @@
     height: 300px;
   }
 
-  .subtitle {
-    display: flex;
+  .reel h2 {
+    font-size: 24px;
+    color: aquamarine;
+    padding-right: 1100px;
+    padding-top: 190px;
+  }
 
-    bottom: 8px;
-    right: 16px;
-    font-size: 18px;
+
+  section a {
+    display: flex;
+    justify-content: flex-start;
+
+  }
+
+   .square img {
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  section {
+    display: flex;
+    padding: 20px;
   }
 
   article {
     padding: 20px;
     font-size: 24px;
     color: #024e76;
+  }
+
+  article h2 {
+    padding: 20px;
+    font-size: 24px;
+    color: #024e76;
     border-bottom: 3px solid;
   }
 
-  .intro {
-    display: flex;
-    box-sizing: 300px 200px;
-  }
 
   .intro p {
     line-height: 1.0;
@@ -125,10 +124,11 @@
  
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: repeat(2 ,2fr);
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2 ,1fr);
     width: 100%;
-    height: 80vh;
+    height: 800px; 
     margin-top: 40px;
     color: black;
     border-radius: 4px;
@@ -138,15 +138,19 @@
     /*grid-auto-flow: dense;*/
   }
   
-
   .grid-item-run {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
     border: solid;
-    background-color: dimgray;
-    background-image: url(./images/Run-Buddy.png);
+    overflow: hidden;
+  }
+
+  .grid-item-run img {
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
 
   .grid-item-fanpage {
@@ -155,8 +159,14 @@
     grid-row-start: 2;
     grid-row-end: 2;
     border: solid;
-    background-color: dimgray;
-    background-image: url(images/Fan\ Page\ Gorillaz.png);
+    overflow: hidden;
+    /* width: 150px; */
+    /* height: 200px; */
+}
+.grid-item-fanpage img {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
   
   .grid-item-blog {
@@ -164,11 +174,17 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 1;
-    border: solid;
-    background-color: dimgray;
-    background-image: url(images/MYPHS-blog.png); 
+    border: solid; 
+    overflow: hidden;
+    /* width: 150px; */
+    /* height: 200px; */
     }
 
+  .grid-item-blog img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    }
 
   .grid-item-next {
     grid-column-start: 3;
@@ -176,8 +192,15 @@
     grid-row-start: 2;
     grid-row-end: 3;
     border: solid;
-    background-color: dimgray;
-    background-image: url(images/youtube-page.png);
+    overflow: hidden;
+    /* width: 150px; */
+    /* height: 200px; */
+  }
+
+  .grid-item-next img {
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
 
   footer {
