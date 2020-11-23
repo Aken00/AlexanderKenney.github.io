@@ -9,7 +9,7 @@ A portfolio that show to a potental employer samples of my work for them to revi
 
 
 ## Website 
-https://aken00.github.io/AlexanderKenney.github.io/
+https://github.com/Aken00/Portfolio-AK
 
 
 ## Contribution
